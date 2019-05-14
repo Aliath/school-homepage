@@ -1,0 +1,160 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #2c3e50;
+  font: 16px "Lato", sans-serif;
+  font-variant: small-caps;
+  text-shadow: 0 0 10px rgba(0, 0, 0, .15);
+  color: #ecf0f1;
+  height: 100%;
+}
+
+main {
+  height: calc(100% - 150px);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #16a085;
+  height: 150px;
+}
+
+.main-title {
+  display: block;
+  font: 4.5em 'Raleway', sans-serif;
+  font-variant: small-caps;
+  margin: 0;
+  width: inherit;
+}
+
+.content-wrapper {
+  position: relative;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formula__number {
+    font-size: 0.75em;
+}
+
+.daily__word:first-child {
+  margin-top: 0.5em;
+  color: red;
+}
+
+.daily__word__wrapper > div:nth-child(2) {
+  margin-top: .5em;
+}
+
+.daily__word__wrapper {
+  font-weight: 300;
+  font-size: 2.25em;
+}
+
+.daily__word__value {
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+  font-size: 1.25em;
+}
+
+.daily__word__icon {
+  vertical-align: middle;
+  width: 90px;
+  margin-right: .75em;
+}
+
+.daily__formula {
+  margin-top: 1em;
+  font-weight: 300;
+  font-size: 2.25em;
+}
+
+.daily__formula__value {
+  margin-top: 0.2em;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.daily__formula__value > sup {
+  font-size: 0.5em;
+}
+
+.content-box {
+  text-align: center;
+  flex: 1 0 0;
+}
+
+.date {
+  font-size: 2.75em;
+  margin-top: .5em;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+.datetime {
+  display: inline-block;
+  text-align: center;
+}
+
+.counter-wrapper {
+  margin-top: 2em;
+}
+
+.counter {
+  margin-top: .5em;
+  font-size: 2em;
+  font-weight: 300;
+  font-variant: small-caps;
+}
+
+.news__title {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.news__content {
+  margin-top: 1em;
+}
+
+.news__wrapper {
+  font-size: 2em;
+  font-weight: 400;
+  margin: .5em 0;
+}
+
+.news__wrapper--important {
+  color: #e74c3c;
+}
+
+.lucky-number {
+    margin-bottom: 2em;
+}
+
+.lucky-number__title {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.lucky-number__content {
+    margin-top: 1em;
+}
+
+.lucky-number__wrapper {
+    display: inline-block;
+    margin: 0 .35em;
+    font-size: 3em;
+}
+
+.lucky-number__wrapper--current {
+  color:#f1c40f;
+  font-size: 3.25em;
+}

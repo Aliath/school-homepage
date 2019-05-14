@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Strona domowa szkoły</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400&subset=latin,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400&subset=latin,latin-ext" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 class="main-title">witamy w naszej szkole</h1>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <div class="content-box content-box__left">
+          <div class="lucky-number">
+            <div class="lucky-number__title">szczęśliwe numerki na ten tydzień:</div>
+            <div class="lucky-number__content">
+              <div class="lucky-number__wrapper"></div>
+              <div class="lucky-number__wrapper"></div>
+              <div class="lucky-number__wrapper"></div>
+              <div class="lucky-number__wrapper"></div>
+              <div class="lucky-number__wrapper"></div>
+            </div>
+          </div>
+          <div class="news">
+            <div class="news__title">aktualności:</div>
+            <div class="news__content">
+              <div class="news__wrapper">25.03.2017 konkurs z języka niemieckiego</div>
+              <div class="news__wrapper news__wrapper--important">29.03.2017 spotkanie z rodzicami</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-box content-box__center">
+          <div class="daily-content">
+            <div class="daily__word__wrapper">
+              <div>słówko na dziś:</div>
+              <div class="daily__word">
+                <img class="daily__word__icon" src="./img/poland-icon.png">
+                <span id="word-pl" class="daily__word__value"></span>
+              </div>
+              <div class="daily__word">
+                <img class="daily__word__icon" src="./img/england-icon.png">
+                <span id="word-en" class="daily__word__value"></span>
+              </div>
+              <div class="daily__word">
+                <img class="daily__word__icon" src="./img/germany-icon.png">
+                <span id="word-de" class="daily__word__value"></span>
+              </div>
+            </div>
+
+            <div class="daily__formula">
+              <div>wzór skróconego mnożenia na dziś:</div>
+              <div id="formula" class="daily__formula__value"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-box content-box__right">
+          <div class="datetime">
+            <div class="clock">
+              <div class="clock__hands">
+                <div id="clock-hour" class="clock__hand clock__hand--hour"></div>
+                <div id="clock-minute" class="clock__hand clock__hand--minute"></div>
+                <div id="clock-second" class="clock__hand clock__hand--second"></div>
+              </div>
+
+              <div class="clock__points">
+                <div class="clock__point"></div>
+                <div class="clock__point"></div>
+                <div class="clock__point"></div>
+                <div class="clock__point"></div>
+                <div class="clock__point"></div>
+                <div class="clock__point"></div>
+              </div>
+
+              <div class="clock__center"></div>
+            </div>
+
+
+            <div id="date" class="date"></div>
+          </div>
+
+          <div class="counter-wrapper">
+            <div class="counter">dzwonek <span id="break-counter"></span></div>
+            <div class="counter">matury <span id="atest-counter"></span></div>
+            <div class="counter">koniec roku maturzystów <span id="aschool-counter"></span></div>
+            <div class="counter">koniec roku szkolnego <span id="school-counter"></span></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/moment-with-locales.js"></script>
+    <script>moment.locale('pl');</script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/randomFormula.js"></script>
+    <script src="./js/randomWord.js"></script>
+    <script src="./js/updateDailyContent.js"></script>
+    <script src="./js/counters.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/updater.js"></script>
+  </body>
+</html>
